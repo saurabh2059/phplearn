@@ -29,7 +29,7 @@ echo $_POST['abc'];
 echo $_FILES['abc'];
 echo $_COOKIE['abc'];
 echo $_SESSION['abc'];
-echo $_ENV[];
+// echo $_ENV[];
 
 
 

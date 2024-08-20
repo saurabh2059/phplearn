@@ -5,54 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-
-    <?php
-
-$name = "sulav";
-echo"$name is a php learner";
+<body style="background: grey;">
     
-    ?>
 
-<br>
-<?php if(true){ ?>
+<form action="/formhandler.php" method="post">
+    <label for="name">Your name:</label>
+    <input name="name" id="name" type="text">
 
+    <label for="age">Your age:</label>
+    <input name="age" id="age" type="number">
 
- <p>is a php learner</p>
+    <label for="favouritepet">favouritepet</label>
+    <select name="favouritepet" id="favouritepet">
+        <option value="none">NONE</option>
+        <option value="dog">DOG</option>
+        <option value="cat">CAT</option>
+        <option value="parrot">PARROT</option>
+    </select>
 
-
-<?php }   ?>
-
-<?php 
-
-$names = ["saurabh", "aryal", "sulav"];
-$surname = array("Arual", "pp", "kw");
-
-?>
-
-
-<?php 
-for ($i = 0; $i < 3; $i++) {   ?>
-   
- <p> The value  is: <?php echo" $names[$i] , $surname[$i]"; ?>  </p>  
- 
-  
-<?php
-};
-
-?>
-
-
-<?php
-// The target path where you want to redirect the user
-$new_page = './home.php';
-
-// Redirect to the new page
-header('Location: ' . $new_page);
-
-// Make sure no further code is executed after the redirect
-exit();
-?>
+    <button type="submit">Submit</button>
+</form>
 
 
 </body>
