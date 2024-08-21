@@ -8,7 +8,7 @@
 <body style="background: grey;">
     
 
-<form action="/formhandler.php" method="post">
+<!-- <form action="/formhandler.php" method="post">
     <label for="name">Your name:</label>
     <input name="name" id="name" type="text">
 
@@ -24,7 +24,33 @@
     </select>
 
     <button type="submit">Submit</button>
-</form>
+</form> -->
+
+<?php
+
+$a = "saurabh";
+$b = "aryal";
+
+$c = $a ." ".$b;
+echo $c;
+
+
+// arithmentic operator
+echo"<br>";
+$a = 1; $b = 1;
+$c = $a+$b;
+echo $c;
+echo 10**3; //power
+
+//logical   ----->  and , or , || , &&
+$c = 5;
+$d= 5;
+
+if( $a == $b && $c==$d || $a == $d){
+    echo "wow";
+}
+
+?>
 
 
 </body>
