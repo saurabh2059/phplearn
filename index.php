@@ -3,84 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calc</title>
+    <title>arrays</title>
 </head>
-<body>
+<body style="background: grey;">
     
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" >
-
-<input type="number" name="num1" placeholder="number 1 ">
-<select name="operator">
-    <option value="add">+</option>
-    <option value="min">-</option>
-    <option value="mul">*</option>
-    <option value="div">/</option>
-    <option value="mod">%</option>
-</select>
-<input type="number" name="num2" placeholder="number 2 ">
-
-
-
-
-<button type="submit"> CALCULATE</button>
-
-
-</form>
-   
 <?php
-     if( $_SERVER["REQUEST_METHOD"] == "POST" ){
-        // grab data
-        $num1 = filter_input(INPUT_POST, "num1", FILTER_SANITIZE_NUMBER_FLOAT);
-        $num2 = filter_input(INPUT_POST, "num2", FILTER_SANITIZE_NUMBER_FLOAT);
-        $operator = htmlspecialchars($_POST['operator']);
 
-      
-      
-        //error handler
 
-        $error= false;
-        if( empty($num1)|| empty($num2) || empty($operator) ){
-            echo " filll all input";
-            $error = true;
-        }
-        if(!is_numeric($num1) || !is_numeric($num2)){
-            echo "enter number value";
-            $error=true;
-        }
-        // calculate the number if no error
+// $fruit01 = ["apple","banana","cherry",];
 
-        if(!$error){
-            $value = 0;
-                switch($operator){
+// // echo $fruit01[1];
+// $fruit01 []= "orange";   //to add in array
+// array_push($fruit01 , "mango");
+// // echo $fruit01[3];
 
-                    case "add":
-                      $value =   $num1+$num2;
-                      break;
-                    case "min":
-                      $value =   $num1-$num2;
-                      break;
-                    case "mul":
-                      $value =   $num1*$num2;
-                      break;
-                    case "div":
-                      $value =   $num1/$num2;
-                      break;
-                    case "mod":
-                      $value =   $num1%$num2;
-                      break;
+// // unset($fruit01[1]); // to remove data whole index also
 
-                      default:
-                      echo "not identified operator";
-                }
+// array_splice($fruit01, 0,1);
 
-        }
+// echo $fruit01[1]."<br>";
 
-        echo "result is " . $value ;
-     }
+
+
+
+// $tasks = [
+//    "laundary" => "saurabh",
+//      "trash" =>"sulav",
+//      "vaccum" =>"aashish",
+//      "dishes" =>"madhav",
+// ];
+// $tasks["dusting"] = "aaaaaa";
+// echo $tasks["trash"];
+// print_r($tasks);
+// echo "<br>";
+// print_r($fruit01);
+// echo "<br>";
+// echo count($tasks);
+// echo "<br>";
+//  sort($tasks);
+//  print_r($tasks);
+
+
+
+
+
+$fruit01 = ["apple","banana","cherry",];
+$test = ["Test1","Test2"];
+
+
+array_splice($fruit01, 1,0, $test);
+
+print_r($fruit01);
+
+$food = [
+
+   "fruits"=> ["apple","mango"],
+   "icecream"=> ["vanilla","strawberry"],
+];
+
+echo $food["fruits"][1];
+
 
 ?>
-
-
 
 
 
