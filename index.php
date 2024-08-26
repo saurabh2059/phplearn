@@ -3,70 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>arrays</title>
+    <title>inbuilt</title>
 </head>
-<body style="background: grey;">
+<body>
     
+
+
+
 <?php
 
+// $string = "hello world";
 
-// $fruit01 = ["apple","banana","cherry",];
+// echo strpos($string,"h");
+// echo str_replace("world","saurabh",$string);
+// echo strtoupper($string);
 
-// // echo $fruit01[1];
-// $fruit01 []= "orange";   //to add in array
-// array_push($fruit01 , "mango");
-// // echo $fruit01[3];
+// echo substr($string,5,2);
+// print_r(explode(" ",$string )); // to separate from the given substring
 
-// // unset($fruit01[1]); // to remove data whole index also
+// $num = -5.5;
 
-// array_splice($fruit01, 0,1);
-
-// echo $fruit01[1]."<br>";
-
-
-
-
-// $tasks = [
-//    "laundary" => "saurabh",
-//      "trash" =>"sulav",
-//      "vaccum" =>"aashish",
-//      "dishes" =>"madhav",
-// ];
-// $tasks["dusting"] = "aaaaaa";
-// echo $tasks["trash"];
-// print_r($tasks);
+// echo abs($num);
 // echo "<br>";
-// print_r($fruit01);
-// echo "<br>";
-// echo count($tasks);
-// echo "<br>";
-//  sort($tasks);
-//  print_r($tasks);
+// echo round($num);
+
+// echo sqrt(4);
+
+
+
+// echo rand(1,100);// to get random number
+
+
+// $array = ["apple","banana","orange"];
+// $array1 = ["ram","hari","shyam"];
+
+// // echo count($array);
+// // echo is_array($array);
+
+// echo array_push($array,"kiwi");
+// print_r($array);
+
+// array_pop($array);
+// print_r($array);
+
+// print_r(array_reverse($array));
+// print_r(array_merge($array,$array1));
+
+
+// echo date("Y-M-D H:i:s");
+$date = "2024-04-01 13:05:12";
+// echo ".......";
+// echo time();
+// echo $date
+echo strtotime($date);
 
 
 
 
 
-$fruit01 = ["apple","banana","cherry",];
-$test = ["Test1","Test2"];
 
-
-array_splice($fruit01, 1,0, $test);
-
-print_r($fruit01);
-
-$food = [
-
-   "fruits"=> ["apple","mango"],
-   "icecream"=> ["vanilla","strawberry"],
-];
-
-echo $food["fruits"][1];
 
 
 ?>
-
-
-
 </body>
 </html>
