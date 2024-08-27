@@ -1,69 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inbuilt</title>
-</head>
-<body>
-    
-
-
 
 <?php
+function saurabh(){
 
-// $string = "hello world";
+    return 1+2;
+}
+function hello($name="sulav"){
+ 
+    echo  "\n hello , " .  $name;
 
-// echo strpos($string,"h");
-// echo str_replace("world","saurabh",$string);
-// echo strtoupper($string);
+}
 
-// echo substr($string,5,2);
-// print_r(explode(" ",$string )); // to separate from the given substring
+function adder($num1 = 0, $num2 = 1){
 
-// $num = -5.5;
+    echo "\n\n". $num1+$num2;
+}
+$num = saurabh();
+echo $num;
 
-// echo abs($num);
-// echo "<br>";
-// echo round($num);
+echo hello("saurabh");
+echo hello();
 
-// echo sqrt(4);
-
-
-
-// echo rand(1,100);// to get random number
-
-
-// $array = ["apple","banana","orange"];
-// $array1 = ["ram","hari","shyam"];
-
-// // echo count($array);
-// // echo is_array($array);
-
-// echo array_push($array,"kiwi");
-// print_r($array);
-
-// array_pop($array);
-// print_r($array);
-
-// print_r(array_reverse($array));
-// print_r(array_merge($array,$array1));
-
-
-// echo date("Y-M-D H:i:s");
-$date = "2024-04-01 13:05:12";
-// echo ".......";
-// echo time();
-// echo $date
-echo strtotime($date);
-
-
-
-
-
-
-
+adder(1);
 
 ?>
-</body>
-</html>
